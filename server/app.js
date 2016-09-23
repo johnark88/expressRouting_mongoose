@@ -15,7 +15,7 @@ var userRouter = require('../routers/userRouter');
 app.use('/', userRouter);
 
 
-app.get('/test',function(req,res){
+app.get('/test/:id?',function(req,res){
 console.log('in test get route ');
 
 console.log('req.body' , req.body);
