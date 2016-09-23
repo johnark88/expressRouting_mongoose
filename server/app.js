@@ -15,6 +15,17 @@ var userRouter = require('../routers/userRouter');
 app.use('/', userRouter);
 
 
+app.get('/test',function(req,res){
+console.log('in test get route ');
+
+console.log('req.body' , req.body);
+console.log('req.query ', req.query );
+console.log('req.params ', req.params);
+
+res.send('ok');
+});
+
+
 //connection string with the database
 mongoose.connect('mongodb://localhost:27017/piUserDb');
 
