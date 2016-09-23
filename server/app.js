@@ -30,9 +30,6 @@ res.send('ok');
 mongoose.connect('mongodb://localhost:27017/piUserDb');
 
 
-
-
-
 var server = app.listen('3000', function() {
   var port = server.address().port;
   console.log('Im here for you! on port =', port);
