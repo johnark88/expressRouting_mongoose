@@ -21,7 +21,6 @@ console.log('in test get route ');
 console.log('req.body' , req.body);
 console.log('req.query ', req.query );
 console.log('req.params ', req.params);
-
 res.send('ok');
 });
 
